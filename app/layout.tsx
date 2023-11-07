@@ -3,6 +3,7 @@ import './globals.scss'
 import Head from 'next/head';
 import Header from '@/components/Header'
 import Dropdown from '@/components/Dropdown';
+import Accordion from '@/components/Accordion';
 
 export const metadata: Metadata = {
   title: 'Phenom',
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Accordion />
       </body>
     </html>
   )

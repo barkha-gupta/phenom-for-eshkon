@@ -43,7 +43,8 @@ const Hero = ({ role }: any) => {
             </span>
           </button>}
         </div>
-        <p className="hero-title">Phenom for {role.title}</p>
+        <p className="hero-title">Phenom for <span className="colored-text">{role.title}
+          </span></p>
         <p className="short-des">{role.short_des}</p>
         <button className="book-btn"> Book a demo</button>
       </div>
