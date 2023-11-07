@@ -28,7 +28,7 @@ a{
       grid-template-rows: 1fr auto;
 }
 .hero_container > div{
-    height: 680px;
+    height: 650px;
     box-sizing: border-box;
 }
 .hero-title{
@@ -43,7 +43,7 @@ a{
 //     border: 1px solid red;
 // }
 .hero_container-left{
-    // position: relative;
+    position: relative;
     padding: 3rem;
     padding-right: 4rem;
     .hero-dropdown-container{
@@ -91,9 +91,11 @@ a{
     background-color: white;
 }
 .hero_container-right-img{
-    object-fit: cover;
+    object-fit:cover;
     height: 100%;
     width: 100%;
+    object-position: top;
+    overflow: hidden;
 }
 .hero_container-bottom{
     width: 130%;
@@ -108,10 +110,6 @@ a{
 .dropdown-container{
     position: absolute;
     // border: 1px solid green;
-    transition-property: height;
-    transition-duration: 0.6s;
-    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-    transition-delay: 0s;
     min-width: 380px;
     max-width: 380px;
     background-color: white;
