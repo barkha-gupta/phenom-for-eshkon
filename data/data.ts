@@ -41,3 +41,36 @@ export const roles : dataType[] = [
         route_link: 'recruiters'
     },
 ]
+
+export interface accordionDataType {
+    id : number,
+    heading: string,
+    des: string,
+    imgUrl: string
+}
+export const accordionData = [
+    {
+        id: 1,
+        heading: 'Fill Open Roles Faster',
+        des : 'Accelerate hiring with AI recommended candidates, automation for candidate screening and scheduling, and communication tools for real-time hiring team alignment.',
+        imgUrl: '/images/p2.png'
+    },
+    {
+        id: 2,
+        heading: 'Automate Hiring Tasks',
+        des : `Hiring may be a top priority, but it's not your primary job. Automate time-intensive tasks so you can stay focused on your team.`,
+        imgUrl: '/images/p3.png'
+    },
+    {
+        id: 3,
+        heading: 'Hire for Skills and Develop Your Team',
+        des : 'Identify and hire best-fit candidates based on potential, experience, and skills with fit scoring and matching criteria. Discover and fill team skills gaps, while developing and retaining your best employees.',
+        imgUrl: '/images/p1.png'
+    },
+    {
+        id: 4,
+        heading: 'Align on job descriptions, ideal candidate characteristics, must-have skills, and more to make stronger hiring decisions.',
+        imgUrl: '/images/p4.png'
+    },
+
+]
