@@ -15,23 +15,22 @@ const Dropdown = () => {
       </div>
       <ul>
         {roles.map((role) => (
-            <Link href={`/${role.route_link}`}>
-                <li key={role.id}>
-            <span>
-              <div>
-                <Image
-                  className="dropdown-li-img"
-                  src={role.imageUrl}
-                  alt="role"
-                  width={40}
-                  height={40}
-                />
-              </div>
-            </span>
-            <span> {role.title} </span>
-          </li>
-            </Link>
-          
+          <Link href={`/${role.route_link}`}>
+            <li key={role.id}>
+              <span>
+                <div>
+                  <Image
+                    className="dropdown-li-img"
+                    src={role.imageUrl}
+                    alt="role"
+                    width={40}
+                    height={40}
+                  />
+                </div>
+              </span>
+              <span> {role.title} </span>
+            </li>
+          </Link>
         ))}
       </ul>
     </div>
