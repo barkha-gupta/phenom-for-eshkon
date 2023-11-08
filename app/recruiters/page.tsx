@@ -1,11 +1,11 @@
 import Hero from "@/components/Hero";
 import { roles } from "@/data/data";
 const Recruiters = () => {
-    return (
-      <>
+  return (
+    <>
       <Hero role={roles[3]} />
     </>
-    )
-  }
-  
-  export default Recruiters;
+  );
+};
+
+export default Recruiters;
