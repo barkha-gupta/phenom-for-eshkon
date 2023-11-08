@@ -1,50 +1,51 @@
-'use client';
+"use client";
 import Image from "next/image";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Dropdown from "./Dropdown";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const Hero = ({ role }: any) => {
-    const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-    };
-    
-      const handleMouseLeave = () => {
-        setIsHovered(false);
-    };
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   return (
     <section className="hero_container">
       <div className="hero_container-left">
-        <div className="hero-dropdown-container"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}>
-            {isHovered && <Dropdown/>}
-          { !isHovered && <button className="hero-dropdown-container-btn">
-            <span>
-              <div>
-                <Image
-                  className="dropdown-container-btn-span1-img"
-                  src={role.imageUrl}
-                  alt="role"
-                  width={40}
-                  height={40}
-                />
-              </div>
-            </span>
-            <span> {role.title} </span>
-            <span>
-            <Image
-          src="/images/da.jpg"
-          alt="down-arrow-icon"
-          width={20}
-          height={20}
-        />
-            </span>
-          </button>}
+        <div
+          className="hero-dropdown-container"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          {isHovered && <Dropdown />}
+          {!isHovered && (
+            <button className="hero-dropdown-container-btn">
+              <span>
+                <div>
+                  <Image
+                    className="dropdown-container-btn-span1-img"
+                    src={role.imageUrl}
+                    alt="role"
+                    width={40}
+                    height={40}
+                  />
+                </div>
+              </span>
+              <span> {role.title} </span>
+              <span>
+              <MdOutlineKeyboardArrowDown size={25}/>
+              </span>
+            </button>
+          )}
         </div>
-        <p className="hero-title">Phenom for <span className="colored-text">{role.title}
-          </span></p>
+        <p className="hero-title">
+          Phenom for <span className="colored-text">{role.title}</span>
+        </p>
         <p className="short-des">{role.short_des}</p>
         <button className="book-btn"> Book a demo</button>
       </div>
