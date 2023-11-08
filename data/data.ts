@@ -69,7 +69,8 @@ export const accordionData = [
     },
     {
         id: 4,
-        heading: 'Align on job descriptions, ideal candidate characteristics, must-have skills, and more to make stronger hiring decisions.',
+        heading: 'Collaborate with Hiring Team',
+        des: 'Align on job descriptions, ideal candidate characteristics, must-have skills, and more to make stronger hiring decisions.',
         imgUrl: '/images/p4.png'
     },
 

@@ -1,17 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { roles } from "@/data/data";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+
 const Dropdown = () => {
   return (
     <div className="dropdown-container">
       <div className="dropdown-header">
         <h4>Role</h4>
-        <Image
-          src="/images/da.jpg"
-          alt="down-arrow-icon"
-          width={20}
-          height={20}
-        />
+        <MdOutlineKeyboardArrowDown size={25}/>
       </div>
       <ul>
         {roles.map((role) => (
