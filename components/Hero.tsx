@@ -38,7 +38,7 @@ const Hero = ({ role }: any) => {
               </span>
               <span> {role.title} </span>
               <span>
-              <MdOutlineKeyboardArrowDown size={25}/>
+                <MdOutlineKeyboardArrowDown size={25} />
               </span>
             </button>
           )}

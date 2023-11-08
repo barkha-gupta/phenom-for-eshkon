@@ -1,11 +1,11 @@
 import Hero from "@/components/Hero";
 import { roles } from "@/data/data";
 const HRIS = () => {
-    return (
-      <>
+  return (
+    <>
       <Hero role={roles[1]} />
     </>
-    )
-  }
-  
-  export default HRIS;
+  );
+};
+
+export default HRIS;

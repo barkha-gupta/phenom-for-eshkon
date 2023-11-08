@@ -1,0 +1,33 @@
+.dropdown-container {
+  position: absolute;
+  // border: 1px solid green;
+  min-width: 380px;
+  max-width: 380px;
+  background-color: white;
+  color: black;
+  padding-bottom: 20px;
+  z-index: 99;
+  .dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    color: #7172da;
+  }
+  ul {
+    list-style-type: none;
+  }
+  ul li {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  li:hover {
+    color: $hover;
+  }
+  .dropdown-li-img {
+    border-radius: 50%;
+    margin-right: 20px;
+    padding-bottom: 10px;
+  }
+}

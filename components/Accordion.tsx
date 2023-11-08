@@ -2,14 +2,12 @@
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
 import { accordionData } from "@/data/data";
+
 const Accordion = () => {
   return (
     <section className="acc_container">
-      <div className="acc_container-row1">
-        <p>
-          Empower your employees to grow, fill critical skill gaps, and feel
-          connected.
-        </p>
+      <div className="acc_container-heading">
+        <p>Accelerate the process of connecting with best-fit candidates.</p>
       </div>
       <div className="acc_container-main">
         <div className="acc_container-main-left">
@@ -28,7 +26,7 @@ const Accordion = () => {
 
         <div className="acc_container-main-right">
           <Image
-          className="acc_container-main-right-img"
+            className="acc_container-main-right-img"
             src="/images/p1.png"
             alt="screenshot"
             width={400}

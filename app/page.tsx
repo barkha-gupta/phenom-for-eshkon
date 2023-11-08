@@ -1,4 +1,4 @@
-import Link from "next/link";
+import "./globals.scss";
 import HiringManagers from "./hiring-managers/page";
 
 export default function Home() {
@@ -8,5 +8,5 @@ export default function Home() {
         <HiringManagers />
       </div>
     </main>
-  )
+  );
 }

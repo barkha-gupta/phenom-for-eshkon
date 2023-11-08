@@ -8,7 +8,7 @@ const Dropdown = () => {
     <div className="dropdown-container">
       <div className="dropdown-header">
         <h4>Role</h4>
-        <MdOutlineKeyboardArrowDown size={25}/>
+        <MdOutlineKeyboardArrowDown size={25} />
       </div>
       <ul>
         {roles.map((role) => (

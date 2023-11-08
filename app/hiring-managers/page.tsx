@@ -6,7 +6,7 @@ const HiringManagers = () => {
     <>
       <Hero role={roles[0]} />
     </>
-  )
-}
+  );
+};
 
 export default HiringManagers;
