@@ -17,37 +17,45 @@ const Hero = ({ role }: any) => {
   return (
     <section className="hero_container">
       <div className="hero_container-left">
-        <div
-          className="hero-dropdown-container"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          {isHovered && <Dropdown />}
-          {!isHovered && (
-            <button className="hero-dropdown-container-btn">
-              <span>
-                <div>
-                  <Image
-                    className="dropdown-container-btn-span1-img"
-                    src={role.imageUrl}
-                    alt="role"
-                    width={40}
-                    height={40}
-                  />
-                </div>
-              </span>
-              <span> {role.title} </span>
-              <span>
-                <MdOutlineKeyboardArrowDown size={25} />
-              </span>
-            </button>
-          )}
+        <div className="hero-left-content">
+          <div>
+            <div
+              className="hero-dropdown-container"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              {isHovered && <Dropdown />}
+                <button className="hero-dropdown-container-btn">
+                  <span>
+                    <div>
+                      <Image
+                        className="dropdown-container-btn-span1-img"
+                        src={role.imageUrl}
+                        alt="role"
+                        width={40}
+                        height={40}
+                      />
+                    </div>
+                  </span>
+                  <span> {role.title} </span>
+                  <span>
+                    <MdOutlineKeyboardArrowDown size={25} />
+                  </span>
+                </button>
+            </div>
+          </div>
+          <div>
+            <p className="hero-title">
+              Phenom for <span className="colored-text">{role.title}</span>
+            </p>
+          </div>
+          <div>
+            <p className="short-des">{role.short_des}</p>
+          </div>
+          <div>
+            <button className="book-btn"> Book a demo</button>
+          </div>
         </div>
-        <p className="hero-title">
-          Phenom for <span className="colored-text">{role.title}</span>
-        </p>
-        <p className="short-des">{role.short_des}</p>
-        <button className="book-btn"> Book a demo</button>
       </div>
       <div className="hero_container-right">
         <Image

@@ -20,12 +20,12 @@ a {
 }
 
 .colored-text {
-  background-image: linear-gradient(to right, blue, green);
+  background: linear-gradient(89.88deg,#ff8045 2.69%,#7bd3cf 43.19%,#ab9cee 72%,#ffbd45 99.83%);
   -webkit-background-clip: text;
-  //   background-clip: ;
-  -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 @import "../styles/accordion";
 @import "../styles/hero";
 @import "../styles/dropdown";
+
